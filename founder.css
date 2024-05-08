@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: poppinsl;
+    src: url(fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: poppinsr;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppinsb;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.flex{
+    display: flex;
+}
+
+
+header{
+    position: fixed;
+    display: block;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    width: 20vw;
+    height: 100vh;
+}
+
+header > h1{
+    text-align: center;
+    font-family: poppinsb;
+    padding: 50px 0px 60px 0px;
+    color: rgb(255, 166, 0);
+}
+
+nav {
+    display: inline-block;
+    padding: 0px 30px 0px 30px;
+}
+
+nav > ul > li{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none;
+    font-family: poppinsr;
+    margin: 3rem 0px 0px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+nav > ul > li > img{
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    padding-left: 3px;
+    position: relative;
+}
+
+header > nav > ul > li > a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #FDA700;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+header > nav > ul > li > a:hover::after{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.flexcolum{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    width: 100%;
+}
+
+.principal{
+    background-size: cover;
+    background-image: url(imagens/background03.png);
+    width: 100%;
+    height: 100vh;
+}
+
+.flex-principal{
+    display: flex;
+    height: 80%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 100px 0px 67px;
+}
+
+.card > .text{
+    color: white;
+    margin-top: 5%;
+}
+
+.card > .text > p > a{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+.card > .text > p > a:hover{
+    border-radius: 8px;
+}
+
+.card > .text > h2{
+    color: #fc9630;
+    font-family: poppinsb;
+    margin-top: 40px;
+}
+
+.card > .text > p{
+    font-family: poppinsr;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.secundario{
+    padding-left: 2rem;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: rgb(33, 33, 33);
+}
+
+.flex2{
+    display: flex;
+    margin-top: 60px;
+    background-color: #fc9630;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.flex-secundario > .clientes{
+    margin: 2rem 0px 0px 4rem;
+}
+
+.flex2 > img{
+    border-radius: 20%;
+}
+
+.flex2 > p{
+    font-family: poppinsr;
+    color: black;
+    font-size: 12px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.flexcolum .terceiro{
+    display: flex;
+    padding-left: 4rem;
+    width: 100%;
+    height: 120vh;
+    overflow-y: hidden;
+    background-color: rgb(33, 33, 33);
+    border-bottom: 4px solid #fc9630;
+}
+
+.flex-terceiro > h1{
+    color: white;
+    font-family: poppinsb;
+    margin: 50px 0px 20px 0px;
+}
+
+.flex-terceiro > p{
+    color: white;
+    font-family: poppinsr;
+    margin: 0px 0px 60px 0px;
+}
+
+.flex-terceiro > p > a{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.flex-terceiro > p > a:hover{
+    border-radius: 8px;
+}
+
+.barber-mobile > p{
+    background-color: #282828;
+    color: white;
+    font-family: poppinsl;
+    text-align: justify;
+    padding: 5px 10px;
+    font-size: 14px;
+    height: 41.7vh;
+}
+
+.barber-mobile1 > p{
+    background-color: #282828;
+    color: white;
+    font-family: poppinsl;
+    text-align: justify;
+    padding: 5px 10px;
+    font-size: 14px;
+    height: 41.7vh;
+}
+
+.flex-terceiro > .barbeiros{
+    display: flex;
+    gap: 20px;
+    max-width: 13.8rem;
+}
+
+.flex-terceiro > .barbeiros > .barber{
+    background-color: #282828;
+}
+
+.flex-terceiro > .barbeiros img{
+    border: 2px solid #FDA700;
+}
+
+.barber > p{
+    color: white;
+    font-family: poppinsl;
+    text-align: justify;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.Quarto{
+    background-color: rgb(33, 33, 33);
+    width: 100%;
+    height: 120vh;
+    overflow-y: hidden;
+    display: flex;
+    padding: 90px 50px;
+    justify-content: space-around;
+}
+
+.Quarto > .barber-mobile1 > .horarios{
+    background-color: rgb(57, 57, 57);
+    color: white;
+    margin-top: 20px;
+    padding: 15px;
+    font-family: poppinsl;
+}
+
+.perfil-barber1 > p{
+    background-color: #fc9630;
+    font-family: poppinsr;
+    color: white;
+    text-align: center;
+}
+
+.barbeiro1 > .horarios{
+    background-color: rgb(57, 57, 57);
+    color: white;
+    margin-top: 20px;
+    padding: 15px;
+    font-family: poppinsl;
+}
+
+.barbeiro2 > .horarios{
+    background-color: rgb(57, 57, 57);
+    color: white;
+    margin-top: 20px;
+    padding: 15px;
+    font-family: poppinsl;
+}
+
+.barbeiro3 > .horarios{
+    background-color: rgb(57, 57, 57);
+    color: white;
+    margin-top: 20px;
+    padding: 15px;
+    font-family: poppinsl;
+}
+
+.barbeiro3-mobile > .horarios{
+    background-color: rgb(57, 57, 57);
+    color: white;
+    margin-top: 20px;
+    padding: 15px;
+    font-family: poppinsl;
+}
+
+.horarios > p{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px){
+    header{
+        width: 23vw;
+    }
+
+    .principal{
+        height: 120vh;
+    }
+
+    .flex-terceiro > .barbeiros > .barber-mobile {
+        display: none;
+    }
+
+    .Quarto{
+        height: 135vh;
+    }
+
+    .barbeiro3-mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px){
+    header{
+    background-color: rgb(28, 28, 28);
+    width: 100vw;
+    height: 70px;
+    }
+
+    header > h1{
+        display: none;
+    }
+
+    nav{
+        display: block;
+        padding: 0px 0px 0px 0px;
+    }
+
+    nav > ul{
+        display: flex;
+        justify-content: space-around;
+        font-size: 12px;
+    }
+
+    nav > ul > li{
+        margin: 1.5rem 0px 0px 0px;
+    }
+
+    .text{
+        margin: 0px 30px 0px 30px;
+    }
+    
+    .principal{
+        height: 115vh;
+    }
+
+    .flexcolum{
+        padding-top: 4.4rem;
+        padding-left: 0%;
+        width: 100vw;
+    }
+
+    .flexcolum .terceiro{
+        display: flex;
+        height: 135vh;
+        padding: 0px 20px 0px 20px;
+        width: 100%;
+    }
+
+    .flexcolum .terceiro .barber-mobile1{
+    display: none;
+    }
+
+    .flex-terceiro > .barbeiros{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .Quarto{
+    background-color: rgb(33, 33, 33);
+    height: 200vh;
+    overflow-y: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    gap: 0px;
+    }
+
+    .Quarto > .barbeiro2{
+        margin-bottom: 155px;
+    }
+
+
+    .perfil-barber1 > p{
+        width: 57%;
+    }
+
+    .Quarto > .barber-mobile1{
+        display: none;
+    }
+
+}
